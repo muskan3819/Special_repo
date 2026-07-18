@@ -118,3 +118,6 @@ button:hover{
         height:42px;
     }
 }
+link a{
+    text-decoration: none;
+}
