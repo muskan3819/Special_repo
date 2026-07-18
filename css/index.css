@@ -1,6 +1,9 @@
 body{
     background-color: black;
+    margin: 0;
+    padding: 15px;
 }
+
 .parent{
     width: 450px;
     height: 600px;
@@ -9,19 +12,23 @@ body{
     padding: 5px;
     border: 2px white solid;
     box-shadow: 3px 6px 6px rgb(198, 75, 95);
+    margin: auto;
+    box-sizing: border-box;
 }
+
 .child h1{
     color: aliceblue;
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     letter-spacing: 6px;
     word-spacing: 3px;
     padding-top: 20px;
     padding: 5px;
-    text-shadow: 0  13PX 4PX red;
+    text-shadow: 0 13px 4px red;
 }
+
 .child h4,b{
     color: rgb(252, 248, 248);
     text-shadow: 0 3px 2px rgb(198, 142, 142);
@@ -29,29 +36,85 @@ body{
     justify-content: center;
     text-align: center;
 }
+
 i{
     margin-left: 30px;
     font-size: 40px;
     color: rgb(209, 30, 30);
     text-shadow: 0 0px 8px rgb(243, 239, 241);
 }
+
 button{
     background-color: rgb(158, 27, 27);
-   border: 2px white solid;
- border-radius: 10px;
- box-shadow: 0 3px 4px white;
+    border: 2px white solid;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px white;
     width: 140px;
     height: 30px;
     margin-left: 150px;
     color: aliceblue;
     transition-duration: 0.1s;
 }
+
 button:hover{
-     background-color: rgb(204, 73, 73);
-   border: 2px rgb(250, 192, 192) solid;
- border-radius: 18px;
- box-shadow: 0 3px 4px rgb(232, 203, 203);
+    background-color: rgb(204, 73, 73);
+    border: 2px rgb(250, 192, 192) solid;
+    border-radius: 18px;
+    box-shadow: 0 3px 4px rgb(232, 203, 203);
     width: 145px;
     height: 35px;
     color: aliceblue;
+}
+
+/*============================*/
+/* Mobile Responsive */
+/*============================*/
+
+@media (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .parent{
+        width:95%;
+        max-width:450px;
+        height:auto;
+        padding:15px;
+    }
+
+    .child h1{
+        font-size:28px;
+        letter-spacing:3px;
+        word-spacing:2px;
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .child h4,
+    b{
+        font-size:16px;
+        line-height:1.8;
+        word-spacing:2px;
+    }
+
+    i{
+        display:block;
+        text-align:center;
+        margin:15px auto;
+        font-size:35px;
+    }
+
+    button{
+        display:block;
+        width:150px;
+        height:40px;
+        margin:25px auto;
+        font-size:16px;
+    }
+
+    button:hover{
+        width:155px;
+        height:42px;
+    }
 }
