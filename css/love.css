@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+.parent{
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
+    background-color: rgb(10, 10, 10);
+    padding: 5px;
+    border: 2px white solid;
+    box-shadow: 3px 6px 6px rgb(198, 75, 95);
+}
+h4{
+    color:white;
+    word-spacing: 4px;
+}
+b{
+    color: pink;
+    background-color: rgb(129, 129, 174);
+}
+h2{ margin-left: 90px;
+    color:white;
+    word-spacing: 4px;
+    text-shadow: 0  8PX 4PX red;
+    position: relative;
+    display: inline;
+ 
+}
+i{  position: absolute;
+left:95px;
+    margin-left: 330px;
+    
+    font-size: 30px;
+    color: rgb(254, 6, 6);
+    text-shadow: 0 0px 8px rgb(247, 192, 220);
+}
