@@ -1,123 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    background-color: black;
-    margin: 0;
-    padding: 15px;
+    background:black;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    font-family:Georgia, serif;
 }
 
 .parent{
-    width: 450px;
-    height: 600px;
-    border-radius: 20px;
-    background-color: rgb(10, 10, 10);
-    padding: 5px;
-    border: 2px white solid;
-    box-shadow: 3px 6px 6px rgb(198, 75, 95);
-    margin: auto;
-    box-sizing: border-box;
+    width:450px;
+    min-height:600px;
+    background:rgb(10,10,10);
+    border:2px solid white;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:
+    0 0 15px rgb(198,75,95),
+    0 0 30px rgba(198,75,95,.5);
+    transition:.4s;
+}
+
+.parent:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 0 20px rgb(198,75,95),
+    0 0 40px rgba(198,75,95,.7);
 }
 
 .child h1{
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    letter-spacing: 6px;
-    word-spacing: 3px;
-    padding-top: 20px;
-    padding: 5px;
-    text-shadow: 0 13px 4px red;
+    color:white;
+    text-align:center;
+    letter-spacing:5px;
+    margin-bottom:30px;
+    text-shadow:0 0 15px red;
 }
 
-.child h4,b{
-    color: rgb(252, 248, 248);
-    text-shadow: 0 3px 2px rgb(198, 142, 142);
-    word-spacing: 3px;
-    justify-content: center;
-    text-align: center;
+.child h4,
+b{
+    color:white;
+    text-align:center;
+    line-height:1.8;
+    word-spacing:3px;
+    text-shadow:0 2px 4px rgb(198,142,142);
 }
 
 i{
-    margin-left: 30px;
-    font-size: 40px;
-    color: rgb(209, 30, 30);
-    text-shadow: 0 0px 8px rgb(243, 239, 241);
+    display:block;
+    text-align:center;
+    font-size:42px;
+    color:red;
+    margin:20px 0;
+    text-shadow:
+    0 0 10px white,
+    0 0 20px red;
 }
 
 button{
-    background-color: rgb(158, 27, 27);
-    border: 2px white solid;
-    border-radius: 10px;
-    box-shadow: 0 3px 4px white;
-    width: 140px;
-    height: 30px;
-    margin-left: 150px;
-    color: aliceblue;
-    transition-duration: 0.1s;
+    display:block;
+    margin:35px auto 10px;
+    width:160px;
+    height:42px;
+    background:rgb(158,27,27);
+    color:white;
+    border:2px solid white;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:0 0 10px white;
+    transition:.3s ease;
 }
 
 button:hover{
-    background-color: rgb(204, 73, 73);
-    border: 2px rgb(250, 192, 192) solid;
-    border-radius: 18px;
-    box-shadow: 0 3px 4px rgb(232, 203, 203);
-    width: 145px;
-    height: 35px;
-    color: aliceblue;
+    background:rgb(204,73,73);
+    transform:scale(1.08);
+    box-shadow:
+    0 0 15px white,
+    0 0 25px red;
 }
+mark{
+     color: pink;
+    background-color: rgb(129, 129, 174);
+}
+.link {
+text-decoration: none;
+}
+/* Mobile */
 
-/*============================*/
-/* Mobile Responsive */
-/*============================*/
-
-@media (max-width:768px){
+@media(max-width:768px){
 
     body{
-        padding:10px;
+        padding:15px;
     }
 
     .parent{
-        width:95%;
-        max-width:450px;
-        height:auto;
-        padding:15px;
+        width:100%;
+        max-width:400px;
+        padding:20px;
+        min-height:auto;
     }
 
     .child h1{
         font-size:28px;
         letter-spacing:3px;
-        word-spacing:2px;
-        margin-bottom:20px;
-        text-align:center;
     }
 
     .child h4,
     b{
         font-size:16px;
-        line-height:1.8;
-        word-spacing:2px;
     }
 
     i{
-        display:block;
-        text-align:center;
-        margin:15px auto;
-        font-size:35px;
+        font-size:36px;
     }
 
     button{
-        display:block;
         width:150px;
         height:40px;
-        margin:25px auto;
-        font-size:16px;
-    }
-
-    button:hover{
-        width:155px;
-        height:42px;
+        font-size:15px;
     }
 }
-link a{
-    text-decoration: none;
+mark{
+     color: pink;
+    background-color: rgb(129, 129, 174);
+}
+.link {
+text-decoration: none;
 }
